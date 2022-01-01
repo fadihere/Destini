@@ -8,13 +8,10 @@
 //TODO: Step 4 - Create a Constructor for this class to be able to initialise the properties created in step 3.
 
 class Story {
-  String storyTitle = "";
-  String choice1 = "";
-  String choice2 = "";
+  String storyTitle;
+  String choice1;
+  String choice2;
 
-  Story(String t, c1, c2) {
-    storyTitle = t;
-    choice1 = c1;
-    choice2 = c2;
-  }
+  Story(
+      {required this.storyTitle, required this.choice1, required this.choice2});
 }
